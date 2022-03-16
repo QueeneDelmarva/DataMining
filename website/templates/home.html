@@ -5,7 +5,8 @@
      <h2>Data Mining Project</h2>
      <p><i>Queene J. Delmarva 19/440457/PA/19087</i></p>
  </center>
- <form method="POST">
+ 
+ <form action="" method="GET">
      <div class="form-group">
          <label for="abstract">Input PubMed abstract here:</label>    
          <textarea 
@@ -17,7 +18,32 @@
             placeholder="Paste abstract here"
         ></textarea>
      </div>
-     <button type="submit" class="btn btn-primary">Search</button>
+     <!--Search MeSH Terms-->
+     <button onclick="location.href" class="btn btn-primary">Search</button> 
+     {% if data %}
+
+     {{data}}
+
+     {% endif %}
+     <!--View Visualization Terms-->
+     <button type="submit" class="btn btn-primary">View Visual</button>
+
+     <div>
+         <!--View MeSH Terms-->
+         <table border="1" align="right">
+             <tr>
+                 <th>MeSH Code</th>
+                 <th>MeSH Term</th>
+             </tr>
+             <tr>
+                 <td>1</td>
+                 <td>Test</td>
+             </tr>
+         </table>
+         <br>
+         <!--View Similar Articles Terms-->
+         <h3 align="left">Similar Articles</h1>
+     </div>
  </form>
   {% endblock %} 
   
