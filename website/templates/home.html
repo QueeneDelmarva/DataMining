@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+{% block content%}
+ <center>
+     <h1><b>MeSH-on-Demand</b></h1>
+     <h2>Data Mining Project</h2>
+     <p><i>Queene J. Delmarva 19/440457/PA/19087</i></p>
+ </center>
+ <form method="POST">
+     <div class="form-group">
+         <label for="abstract">Input PubMed abstract here:</label>    
+         <textarea 
+            type="text" 
+            class="form-control" 
+            rows="10"
+            id="abstract" 
+            name="abstract" 
+            placeholder="Paste abstract here"
+        ></textarea>
+     </div>
+     <button type="submit" class="btn btn-primary">Search</button>
+ </form>
+  {% endblock %} 
+  
